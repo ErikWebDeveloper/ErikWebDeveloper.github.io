@@ -391,7 +391,7 @@ class App{
 }
 var calendarConfig = {
     elementId : 'Calendar',
-    language : 'es',
+    language : 'fr',
     daySystem : 'mon-first', // 'sun-first' , 'mon-first' 
     yearScroll : false
 }
@@ -400,7 +400,7 @@ var schedules = {
     years : 'all',
     months : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     weeks : 'all',
-    days : [ 0, 1, 2, 3, 4, 5]
+    days : [  1, 2, 3, 4, 5]
 }
 
 var calendar = new App(calendarConfig, schedules);

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Acount</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./formSwipper.css">
+    <style>
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf);
+        }
+        *{
+            font-family: 'Ubuntu', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        label{
+            color: rgb(124, 129, 131);
+        }
+        .formSwipperContainer{
+            width: 90%;
+            max-width: 450px;
+            margin: auto;
+            margin-top: 5rem;
+        }
+        h2{
+            text-align: center;
+            color: #a7abb0;
+            margin-bottom: 2rem;
+        }
+        h5{
+            color: grey;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        fieldset{
+            border-radius: 5px;
+            padding: 1rem;
+            border-color: #00000067;
+        }
+        .radioInputs{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .radioInputs > label{
+            display: block;
+            cursor: pointer;
+            background-color: #438ce6;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            width: 50%;
+            padding: 0.5rem 0;
+
+        }
+        .radioInputs > input{
+            opacity: 0;
+            display: inline;
+            width: 1px;
+        }
+        .radioInputs > input:checked + label{
+            background-color: rgb(8, 103, 176);
+        }
+        .textInputs > input{
+            color: var(--formSwipperColor);
+            padding: 0.5rem 1rem;
+            padding-left: 0.5rem;
+            border-radius: 5px;
+            background-color: var(--formSwipperBackGround);
+            border: 1px solid #b1b1b1;
+        }
+        .textInputs > label{
+            display: block;
+        }
+        .is-valid{
+            border: 1px solid #409340!important;
+            color: #409340 !important;
+        }
+        .policity-example{
+            color: #768da8;
+            max-height: 200px;
+            overflow: scroll;
+            font-size: 0.8rem;
+
+        }
+        .configContainer label, .configContainer input, .configContainer button{
+            margin: 0.5rem 0;
+        }
+        input[type="color"]{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="formSwipperContainer">
+        <form id="userConfigForm" class="formSwipper" action="#" method="GET">
+            <!--Tipo de cuenta-->
+            <section>
+    
+                <h2>
+                    Form Example
+                </h2>
+             
+                <div class="formPage">
+    
+                    <h5>
+                        Select your preferred browser theme
+                    </h5>
+    
+                    <fieldset>
+                        <div class="radioInputs" style="margin-bottom: 1rem;">
+                            <input type="radio" name="preference_user" id="btn-1" value="1" autocomplete="off">
+                            <label for="btn-1">Ligth</label>
+                        </div>
+                        
+                        <div class="radioInputs" style="margin-bottom: 1rem;">
+                            <input type="radio" name="preference_user" id="btn-2" value="2" autocomplete="off">
+                            <label for="btn-2">Dark</label>
+                        </div>
+        
+                        <div class="radioInputs">
+                            <input type="radio" name="preference_user" id="btn-3" value="3" autocomplete="off">
+                            <label for="btn-3">Auto</label>
+                        </div>
+                    </fieldset>
+                </div>
+    
+                <div class="formPage">
+                
+                    <h5>
+                        Enter your alias
+                    </h5>
+                
+                    <fieldset>
+    
+                        <div class="textInputs">
+                            <label for="user_alias_input">Email</label>
+                            <br>
+                            <input type="email" name="user_email_input" placeholder="jonh_doe@example.com" id="user_email_input">
+                        </div>
+    
+                    </fieldset> 
+    
+                </div>
+    
+                <div class="formPage">
+                
+                    <h5>
+                        Read our privacy policy and terms of use
+                    </h5>
+                
+                    <fieldset>
+                        <div>
+                            <div class="policity-example">
+                                <h3>Policity Terms</h3>
+                                <br>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestias doloribus sint exercitationem possimus nihil voluptatibus dolor magnam, commodi, quae minima assumenda. Doloribus eius beatae eligendi architecto, aspernatur inventore quisquam?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestias doloribus sint exercitationem possimus
+                                    nihil voluptatibus dolor magnam, commodi, quae minima assumenda. Doloribus eius beatae eligendi architecto,
+                                    aspernatur inventore quisquam?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestias doloribus sint exercitationem possimus
+                                    nihil voluptatibus dolor magnam, commodi, quae minima assumenda. Doloribus eius beatae eligendi architecto,
+                                    aspernatur inventore quisquam?
+                                </p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <input type="checkbox" value="true" id="check" name="acept_policity">
+                            <label for="check">
+                                I agree
+                            </label>
+                        </div>
+                    </fieldset>
+                
+                </div>
+    
+            </section>
+            
+        </form>
+    </div>
+
+    <div class="configContainer" style="margin-top: 2rem; background-color: rgba(255, 255, 255, 0.3);">
+        <fieldset style="padding: 1rem 2rem;">
+            <h3 style="margin-bottom: 0.5rem;">Configuration</h3>
+            <div>
+                <label for="theme" style="margin-bottom: 0.5rem;">Theme preset</label>
+                <select name="theme" id="theme" style="margin-bottom: 0.5rem; padding: 0.2rem 1rem;">
+                    <option value="ligth">Ligth</option>
+                    <option value="dark">Dark</option>
+                    <option value="custom">Custom</option>
+                </select>
+                <div>
+                    <label for="backgroundColor">Background Form</label>
+                    <input id="backgroundColor" type="color" name="backgroundColor">
+                </div>
+                <div>
+                    <label for="textColor">Text Form</label>
+                    <input id="textColor" type="color" name="textColor">
+                </div>
+                <div>
+                    <label for="disabledColor">Disabled Form</label>
+                    <input id="disabledColor" type="color" name="disabledColor">
+                </div>
+                <div>
+                    <label for="borderColor">Border Form</label>
+                    <input id="borderColor" type="color" name="borderColor">
+                </div>
+                <button type="button" id="themeBtn" style="padding: 0.2rem 1rem;">Set</button>
+            </div>
+        </fieldset>
+    </div>
+    <script type="module" src="./formSwiper.js"></script>
+    <script type="module" src="./main.js"></script>
+
+</body>
+</html>
