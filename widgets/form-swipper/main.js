@@ -1,4 +1,4 @@
-import  { FormSwipper, FormHandler}  from "./formSwiper.js"
+import  { FormSwipper, FormHandler}  from "./formSwipper.js"
 
 var formSwipperConfig = {
     parentElementId : 'userConfigForm',
