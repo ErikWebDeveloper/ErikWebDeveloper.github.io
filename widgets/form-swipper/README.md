@@ -117,7 +117,7 @@ Agrega el archivo al documento HTML:
     </body>
 </html>
 ```
-> [!WARNING] Atención
+> [!WARNING] 
 > Asegúrate de haber configurado correctamente el atributo `type="module"` para utilizar la biblioteca en tu código.
 
 
