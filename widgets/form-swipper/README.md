@@ -14,7 +14,7 @@ Para importar la biblioteca, primero debes agregar el archivo `formSwipper.css` 
 ```html
 <link rel="stylesheet" href="./formSwipper.css">
 ```
-> [!WARNING] Atención
+> [!WARNING] 
 > Asegúrate de que el atributo `src` apunte al archivo `formSwipper.css` en tu directorio.
 
 También necesario agregar un elemento HTML correspondiente para su integración.
@@ -47,7 +47,7 @@ Al final del documento HTML, justo antes de la etiqueta `<body>`, se debe añadi
 ```
 Asegúrate de modificar el atributo `src` para que apunte al archivo **formSwipper.js** y refleje la ubicación donde lo tengas almacenado.
 
-> [!WARNING] Atención
+> [!WARNING] 
 > Asegúrate de haber configurado el atributo `type="module"` correctamente.
 
 
