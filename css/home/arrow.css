@@ -1,0 +1,46 @@
+.arrows {
+    display: flex;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 1vh;
+    left: calc(50%);
+    width: 0;
+    height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-left: 3px solid var(--pink);
+    border-radius: 2px;
+}
+
+.down-arrow:after {
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid var(--pink);
+    border-right: 4px solid var(--pink);
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+    0% {
+        margin-bottom: 0;
+    }
+
+    50% {
+        margin-bottom: 20px;
+    }
+
+    100% {
+        margin-bottom: 0;
+    }
+}
+
+.down-arrow {
+    animation: jumpInfinite 1.5s infinite;
+}
+

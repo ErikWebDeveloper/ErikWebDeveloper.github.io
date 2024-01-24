@@ -1,0 +1,38 @@
+/* Home icons */
+.purple-icons>a>svg {
+    opacity: 0;
+    transition: color 0.5s;
+}
+
+.purple-icons> :first-child> :first-child {
+    animation: iconsIn 1s forwards linear 0.5s;
+}
+
+.purple-icons> :nth-child(2)> :first-child {
+    animation: iconsIn 1s forwards linear 1s;
+}
+
+.purple-icons> :last-child> :first-child {
+    animation: iconsIn 1s forwards linear 1.5s;
+}
+
+.purple-icons>a>svg:hover {
+    color: var(--pink-hover);
+    transition: color 0.5s;
+}
+
+@keyframes iconsIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

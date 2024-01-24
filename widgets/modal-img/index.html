@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board - Index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <style>
+        .page-title {
+            background-color: rgb(230, 230, 230);
+            color: rgb(120, 136, 151);
+            font-weight: 400;
+        }
+        .fieldContainer{
+            text-align: center;
+        }
+        .fieldLabel{
+            background-color: rgb(230, 230, 230);
+            color: rgb(79, 89, 97);
+            padding: 0.2rem 0 0.2rem 0.5rem;
+            max-width: 500px;
+            margin: auto;
+            text-align: start;
+        }
+        input[type="text"]{
+            width: 100%;
+            max-width: 495px;
+            background-color: inherit;
+            border: none;
+            border-bottom: 1px solid rgb(15, 83, 112);
+            margin-top: 1rem;
+            color: rgb(76, 99, 114);
+            font-size: 1rem;
+            transition: color 0.5s, border-bottom 0.5s;
+        }
+        input[type="text"]:disabled{
+            width: 100%;
+            max-width: 495px;
+            background-color: inherit;
+            border: none;
+            border-bottom: 1px solid rgb(140, 155, 162);
+            margin-top: 1rem;
+            color: rgb(119, 141, 155);
+            font-size: 1rem;
+            transition: color 0.5s, border-bottom 0.5s;
+        }
+        input[type="radio"]{
+            opacity: 0;
+            width: 0px;
+        }
+        input[type="radio"] + label {
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+        input[type="radio"]:checked + label{
+            background-color: #236794;
+            transition: background-color 0.5s;
+        }
+        .btnUnlock{
+            width: fit-content;
+            font-size: 0.8rem;
+            color: rgb(18, 108, 187);
+            transition: color 0.5s;
+            margin: 0;
+        }
+        .btnUnlock:hover{
+            color: rgb(18, 75, 124);
+            transition: color 0.5s;
+            cursor: pointer;
+        }
+        .perfect-circle-container {
+            background-color: white;
+            width: 120px; 
+            height: 120px; 
+            overflow: hidden;
+            border-radius: 50%; 
+        }
+        .perfect-circle-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Title-->
+    <h3 class="page-title p-3 text-center">Perfil</h3>
+    <!-- Dades Perfil -->
+    <div class="m-auto mb-3" style="width: 95% ;max-width: 1000px;">
+        <div class="accordion" id="accordiondadesPerfil">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#dadesPerfil" aria-expanded="true" aria-controls="collapseOne"
+                        style="background-color: rgba(230, 230, 230, 0.2); color: rgb(120, 136, 151);">
+                        Dades del perfil
+                    </button>
+                </h2>
+                <div id="dadesPerfil" class="accordion-collapse collapse show" data-bs-parent="#accordiondadesPerfil">
+                    <div class="accordion-body">
+                        <form action="" method="post">
+                            <!-- Imagen Avatar-->
+                            <div class="fieldContainer mb-5">
+                                <p class="fieldLabel">Avatar</p>
+                                <div class="m-auto d-flex justify-content-center align-items-center pt-4" style="max-width: 500px;">
+                                    <div class="perfect-circle-container">
+                                        <img id="user_avatar_image" src="./2.jpg" class="img-fluid perfect-circle-image" alt="Avatar" style="width: 200px;">
+                                    </div>
+                                </div>
+                                <div class="m-auto d-flex justify-content-center align-items-center mt-2" style="width: 100%; max-width: 500px;">
+                                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: inherit; border: none;">
+                                        <p class="btnUnlock">Cambiar</p>
+                                    </button>
+                                </div>
+                                <input type="hidden" name="user_avatar" value="./2.jpg">
+                            </div>
+                            <!-- Alias -->
+                            <div class="fieldContainer mb-5">
+                                <p class="fieldLabel">Alias</p>
+                                <input type="text" name="user_alias" id="user_alias" disabled class="fieldLocker">
+                                <div class="m-auto d-flex justify-content-end align-items-end mt-2"
+                                    style="width: 100%; max-width: 500px;">
+                                    <p class="btnUnlock locker"><span>🔒</span>Cambiar</p>
+                                </div>
+                            </div>
+                            <!-- Correo -->
+                            <div class="fieldContainer">
+                                <p class="fieldLabel">Correu electrònic</p>
+                                <input type="text" name="user_alias" id="user_alias" disabled class="fieldLocker">
+                                <div class="m-auto d-flex justify-content-end align-items-end mt-2" style="width: 100%; max-width: 500px;">
+                                    <p class="btnUnlock locker"><span>🔒</span>Cambiar</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Avatar Images-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Selecciona un avatar</h1>
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="radio" id="1" name="image">
+                    <label for="1"><img src="anonymous.png" class="img-fluid"></label>
+
+                    <input type="radio" id="2" name="image">
+                    <label for="2"><img src="anonymous.png" class="img-fluid"></label>
+
+                    <input type="radio" id="3" name="image">
+                    <label for="3"><img src="anonymous.png" class="img-fluid"></label>
+
+                    <input type="radio" id="4" name="image">
+                    <label for="4"><img src="anonymous.png" class="img-fluid"></label>
+
+                    <input type="radio" id="5" name="image">
+                    <label for="5"><img src="anonymous.png" class="img-fluid"></label>
+
+                </div>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">O puja el teu propi avatar/logo</h1>
+                </div>
+                <div class="modal-body">
+                    <div id="imagePreviewContainer border border-3" class="perfect-circle-container mb-3 m-auto">
+                        <img src="./2.jpg" id="imagePreview" alt="Previsualización de Imagen" class="img-fluid perfect-circle-image">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="uploadImageInput">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary closeModal" data-bs-dismiss="modal">Cancel·lar</button>
+                    <button type="button" class="btn btn-primary" id="saveModal">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastSuccess" class="toast bg-success text-light" role="alert" aria-live="assertive"
+            aria-atomic="true">
+            <div class="toast-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                        d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                </svg>
+                <strong class="me-auto">Notificació</strong>
+                <small></small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                S'ha eliminat l'anunci correctament.
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastDanger" class="toast bg-danger text-light" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                </svg>
+                <strong class="me-auto">Notificació</strong>
+                <small></small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                No s'ha pogut eliminar l'anunci.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="lockerField.js"></script>
+    <script src="imagePreview.js"></script>
+</body>
+
+</html>

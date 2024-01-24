@@ -2,12 +2,21 @@
     font-family: 'Ubuntu';
     src: url(/fonts/Ubuntu/Ubuntu-Medium.ttf);
 }
-
+:root{
+        --dark-1: rgb(22, 22, 22);
+        --dark-2: rgb(20, 20, 20);
+    
+        --pink: #e71567;
+    
+        --pink-hover: #b8215b;
+}
 *{
     font-family: 'Ubuntu';
 }
 body{
-    background-color: rgb(239, 241, 244);
+    background-color: rgb(48, 52, 56);
+    background: repeating-linear-gradient(45deg, var(--dark-1), var(--dark-1) 10px, var(--dark-2) 10px, var(--dark-2) 20px);
+        width: 100%;
 }
 header{
     background-color: rgb(50, 50, 50);
@@ -33,4 +42,16 @@ header h1{
 .configContainer{
     background-color: white;
     margin-top: 2rem;
+}
+
+.content-style{
+    background-color: rgba(51, 50, 50, 0.7);
+    color: whitesmoke;
+    margin-top: 2rem;
+    padding: 2rem 0;
+}
+.content-inner{
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1rem;
 }
