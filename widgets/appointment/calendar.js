@@ -3,11 +3,16 @@ String.prototype.capitalize = function() {
 };
 
 class Calendar{
-    constructor(config = {}, schedule = {}){
+    constructor(controller, config = {}, schedule = {}){
+        this.controller = controller;
+        // Variable de configuracion
         this.config = config;
+        // Reglas y normas de la distribución de dias
         this.schedule = schedule;
+        // ID del elemento HTML que contiene el calendario
         this.calendarElement = document.getElementById(config['elementId']);
         this.calendarElement.classList.add('container');
+        // Idioma Configurado
         this.lang = this.config['language'];
         this.daySystem = this.config['daySystem'];
         this.date = {year : null, month: null};
@@ -292,9 +297,9 @@ class Calendar{
         // Verificar que el mes no sea mas pequeño que la fecha actual
         if(this.date['month'] < this.currentDate['month'] && this.date['year'] == this.currentDate['year']) this.date['month'] = this.currentDate['month'];
 
-        //Si se ha cambiado de años
-        if(nextYear) console.log('new year'), this.yearNavigation('next');
-        if(backYear) console.log('back year'), this.yearNavigation('back');
+        // Si se ha cambiado de años
+        if(nextYear) this.yearNavigation('next');
+        if(backYear) this.yearNavigation('back');
 
         this.monthElement.innerHTML = this.getMonthName(this.date['month']);
 
@@ -336,7 +341,7 @@ class Calendar{
                     days[x].innerHTML != ""
                 ){
                     days[x].classList.add('enable-day')
-                    days[x].addEventListener('click', () => this.handleDaySelected(event));
+                    days[x].addEventListener('click', (event) => {this.handleDaySelected(event)});
                 }
                 else{
                     days[x].classList.add('disabled-day'); 
@@ -349,7 +354,7 @@ class Calendar{
             }
         }
     }
-
+    
     handleDaySelected(event){
         // Deseleccionar cualquier posible elemento seleccionado
         let weeks = document.getElementsByClassName('row-week');
@@ -377,31 +382,45 @@ class Calendar{
 }
 
 class Schedule{
-    constructor(){
-        this.x = 0
+    constructor(date){
+        this.date = date
     }
 
 }
 
 class App{
-    constructor(calendarConfig, schedules){
-        this.calendar = new Calendar(calendarConfig, schedules);
+    constructor(calendarConfig, rules){
+        this.calendar = new Calendar(this, calendarConfig, rules);
         this.schedule = new Schedule();
     }
 }
+
+
 var calendarConfig = {
     elementId : 'Calendar',
-    language : 'fr',
+    language : 'es',
     daySystem : 'mon-first', // 'sun-first' , 'mon-first' 
     yearScroll : false
 }
 
-var schedules = {
+var rules = {
     years : 'all',
     months : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     weeks : 'all',
     days : [  1, 2, 3, 4, 5]
 }
 
-var calendar = new App(calendarConfig, schedules);
+// Asignar normativa maximo meses
+// Falta contabilizarl los dsias exatos para max mounth
+let d = new Date();
+let current = d.getMonth();
+let max = 3;
+let monthsRules = [];
+for(let i = 0; i < max; i++){
+    monthsRules.push(current + i)
+}
+rules.months = monthsRules;
+console.log(monthsRules)
+
+var calendar = new App(calendarConfig, rules);
 
