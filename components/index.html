@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik WebDeveloper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/core/global.css">nk
+
+    <style>
+        .card-links-custom{
+            
+            text-decoration: none !important;
+            font-size: 0.6rem;
+        }
+        .repo{
+            color: white;
+        }
+        .docs{
+            color: #fff466;
+        }
+        .demo{
+            color: #74efa3;
+        }
+        .download{
+            color: #4391f0;
+        }
+    </style>
+</head>
+
+<body class="default">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Erik WebDeveloper</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Plantillas</a></li>
+                            <li><a class="dropdown-item" href="#">Componentes</a></li>
+                            <li><a class="dropdown-item" href="#">Estilos</a></li>
+                            <li><a class="dropdown-item" href="/widgets/index.html">Widgets</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="content-style" style="min-height: 100vh;">
+        <div class="content-inner">
+            <h3 class="mb-5 bg-dark p-3 border border-1 rounded rounded-1 text-center" data-bs-theme="dark">
+                🏭 Componentes
+            </h3>
+            
+            <div class="m-auto">
+    
+                <article class="card m-auto" data-bs-theme="dark">
+                    <div class="card-body" >
+                        <h5 class="card-title">🖇️ <strong>ClipBoard</strong></h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">HTML, CSS, JS, Bootstrap</h6>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Componente para copiar un texto o código al portapapeles.</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Estado: <i>Versión 1.0</p>
+                    </div>
+                    <div class="sm mt-3 px-3 d-flex text-center">
+                        <a class="flex-fill repo card-links-custom"
+                            href="https://github.com/ErikWebDeveloper/Templates-Portfolio/tree/main/widgets/appointment" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-github"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg>
+                            <p>Repositorio</p>
+                        </a>
+                        <a class="flex-fill card-links-custom docs"
+                            href="https://github.com/ErikWebDeveloper/Templates-Portfolio/blob/main/widgets/appointment/README.md"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#fff466" class="bi bi-book"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                            </svg>
+                            <p>Documentación</p>
+                        </a>
+                        <a class="flex-fill card-links-custom demo" href="./clipboard/index.html" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#74efa3" class="bi bi-plugin"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 1 2.898 5.673c-.167-.121-.216-.406-.002-.62l1.8-1.8a3.5 3.5 0 0 0 4.572-.328l1.414-1.415a.5.5 0 0 0 0-.707l-.707-.707 1.559-1.563a.5.5 0 1 0-.708-.706l-1.559 1.562-1.414-1.414 1.56-1.562a.5.5 0 1 0-.707-.706l-1.56 1.56-.707-.706a.5.5 0 0 0-.707 0L5.318 5.975a3.5 3.5 0 0 0-.328 4.571l-1.8 1.8c-.58.58-.62 1.6.121 2.137A8 8 0 1 0 0 8a.5.5 0 0 0 1 0" />
+                            </svg>
+                            <p>LiveDemo</p>
+                        </a>
+                    </div>
+                </article>
+    
+                <article class="card m-auto mt-3 pb-3" data-bs-theme="dark">
+                    <div class="card-body">
+                        <h5 class="card-title">⏭️ <strong>Form Swipper</strong></h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">HTML, CSS, JS</h6>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">El widget Form Swipper ha sido desarrollado para dar una solución de disenyo a formularios extensos.</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Estado: <i>Versión 1.0</i></p>
+                    </div>
+                    <div class="sm mt-3 px-3 d-flex text-center">
+                        <a class="flex-fill repo card-links-custom" href="https://github.com/ErikWebDeveloper/Templates-Portfolio/tree/main/widgets/form-swipper"  target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-github"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg>
+                            <p>Repositorio</p>
+                        </a>
+                        <a class="flex-fill card-links-custom docs" href="https://github.com/ErikWebDeveloper/Templates-Portfolio/blob/main/widgets/form-swipper/README.md" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"  fill="#fff466" class="bi bi-book"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                            </svg>
+                            <p>Documentación</p>
+                        </a>
+                        <a class="flex-fill card-links-custom demo" href="./form-swipper/index.html" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"  fill="#74efa3" class="bi bi-plugin"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 1 2.898 5.673c-.167-.121-.216-.406-.002-.62l1.8-1.8a3.5 3.5 0 0 0 4.572-.328l1.414-1.415a.5.5 0 0 0 0-.707l-.707-.707 1.559-1.563a.5.5 0 1 0-.708-.706l-1.559 1.562-1.414-1.414 1.56-1.562a.5.5 0 1 0-.707-.706l-1.56 1.56-.707-.706a.5.5 0 0 0-.707 0L5.318 5.975a3.5 3.5 0 0 0-.328 4.571l-1.8 1.8c-.58.58-.62 1.6.121 2.137A8 8 0 1 0 0 8a.5.5 0 0 0 1 0" />
+                            </svg>
+                            <p>LiveDemo</p>
+                        </a>
+                        <a class="flex-fill card-links-custom download" href="./form-swipper/lib/FormSwipper.zip" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"  fill="#4391f0" class="bi bi-cloud-download"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383" />
+                                <path
+                                    d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708z" />
+                            </svg>
+                            <p>
+                                Descargar
+                            </p>
+                        </a>
+                    </div>
+                </article>
+    
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
