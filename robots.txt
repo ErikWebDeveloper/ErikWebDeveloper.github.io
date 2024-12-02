@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://erikwebdeveloper.github.io/sitemap.xml
