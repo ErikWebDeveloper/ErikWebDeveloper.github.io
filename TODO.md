@@ -1,5 +1,5 @@
 ### 📋 To do...
-- [ ] Crear README
+- [x] Crear README
 - [ ] Optimizar SEO
 - [ ] Optimizar imágenes
 - [ ] Optimizar carga diferida de módulos JS
