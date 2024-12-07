@@ -11,6 +11,12 @@ body{
 */
 }
 
+.custom-tooltip {
+  --bs-tooltip-bg: #225cb4;
+  --bs-tooltip-color: var(--bs-white);
+}
+
+
 .nav-link {
   color: var(--secondaryColor) !important;
 }
