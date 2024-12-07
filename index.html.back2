@@ -2,48 +2,48 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="copyright" content="Erik Firmino">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="copyright" content="Erik Firmino" />
   <meta name="description"
-    content="Erik Firmino, desarrollador de software especializado en soluciones modernas para la web y móviles. Descubre mis proyectos y experiencia.">
+    content="Erik Firmino, desarrollador de software especializado en soluciones modernas para la web y móviles. Descubre mis proyectos y experiencia." />
   <meta name="keywords"
-    content="Erik Firmino, Software Developer, desarrollo web, desarrollo móvil, React, Node.js, programación, tecnología">
-  <meta name="author" content="Erik Firmino">
-  <meta name="robots" content="index, follow">
+    content="Erik Firmino, Software Developer, desarrollo web, desarrollo móvil, React, Node.js, programación, tecnología" />
+  <meta name="author" content="Erik Firmino" />
+  <meta name="robots" content="index, follow" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="48x48"/>
   <title>
     Erik Firmino - Desarrollador de Software | Proyectos y Soluciones
     Tecnológicas
   </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/slider.css">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/slider.css" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Erik Firmino - Desarrollador de Software">
+  <meta property="og:title" content="Erik Firmino - Desarrollador de Software" />
   <meta property="og:description"
-    content="Soy un desarrollador de software enfocado en crear soluciones modernas para la web y aplicaciones móviles.">
-  <meta property="og:image" content="./img/Profile.jpeg">
-  <meta property="og:url" content="https://erikwebdeveloper.github.io">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_ES">
+    content="Soy un desarrollador de software enfocado en crear soluciones modernas para la web y aplicaciones móviles." />
+  <meta property="og:image" content="./img/Profile.jpeg" />
+  <meta property="og:url" content="https://erikwebdeveloper.github.io" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
 
   <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Erik Firmino - Desarrollador de Software">
-  <meta name="twitter:description" content="Explora mis proyectos y habilidades como desarrollador de software.">
-  <meta name="twitter:image" content="./img/Profile.jpeg">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Erik Firmino - Desarrollador de Software" />
+  <meta name="twitter:description" content="Explora mis proyectos y habilidades como desarrollador de software." />
+  <meta name="twitter:image" content="./img/Profile.jpeg" />
 
-  <link rel="canonical" href="https://erikwebdeveloper.github.io">
+  <link rel="canonical" href="https://erikwebdeveloper.github.io" />
 </head>
 
 <body id="index">
   <a href="#main-content" class="visually-hidden-focusable">Ir al contenido principal</a>
   <!-- Barra de navegación -->
-  <nav style="position: sticky; z-index: 10; top: 0" aria-label="Barra de navegación principal">
+  <nav style="position: sticky; z-index: 10; top: 0" role="navigation" aria-label="Barra de navegación principal">
     <h2 class="visually-hidden">Navegación principal</h2>
     <div class="card border border-1 my-4 m-auto bg-body-tertiary py-2"
       style="max-width: 800px; width: 95%; box-shadow: var(--shadow)">
@@ -53,7 +53,7 @@
             <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16" aria-label="Ir a inicio">
               <path
-                d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716q.113.137.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0">
+                d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716q.113.137.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0" />
             </svg>-->
             <span>Inicio</span>
           </a>
@@ -64,7 +64,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-fill"
               viewBox="0 0 16 16" aria-label="Proyectos">
               <path
-                d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
+                d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z" />
             </svg>
             <span>Proyectos</span>
           </a>
@@ -75,7 +75,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-envelope-fill" viewBox="0 0 16 16" aria-label="Contacto">
               <path
-                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z">
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
             </svg>
             <span>Contacto</span>
           </a>
@@ -84,7 +84,7 @@
     </div>
   </nav>
   <!-- Contenido-->
-  <main id="main-content" class="d-flex flex-column justify-content-center align-items-center">
+  <main role="main" id="main-content" class="d-flex flex-column justify-content-center align-items-center">
     <!-- Inicio -->
     <section id="inicio" class="d-flex flex-column justify-content-center align-items-center" style="min-height: 90vh">
       <h2 class="visually-hidden">Sección de inicio</h2>
@@ -93,7 +93,7 @@
         <div class="row g-0 p-3">
           <div class="col-md-4 d-none d-sm-none d-md-block text-center my-auto">
             <img src="./img/Profile.jpeg" class="img-fluid border" alt="Foto de perfil de Erik Firmino"
-              style="border-radius: 50%; max-width: 166px">
+              style="border-radius: 50%; max-width: 166px" />
           </div>
 
           <div class="col-md-8">
@@ -106,7 +106,7 @@
               </h5>
               <div class="d-sm-none my-3 text-center">
                 <img src="./img/Profile.jpeg" class="img-fluid border" alt="Foto de perfil de Erik Firmino"
-                  style="border-radius: 50%; max-width: 166px">
+                  style="border-radius: 50%; max-width: 166px" />
               </div>
               <p class="card-text fw-bold text-center text-sm-start">
                 🇦🇩 Andorra | 🚀 Web & Mobile Apps
@@ -123,7 +123,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                     class="bi bi-github" viewBox="0 0 16 16">
                     <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
                   </svg>
                   Github
                 </a>
@@ -132,9 +132,9 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                     class="bi bi-envelope-arrow-up-fill" viewBox="0 0 16 16">
                     <path
-                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z">
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z" />
                     <path
-                      d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.793l-.396.397a.5.5 0 1 1-.708-.708l1.25-1.25a.5.5 0 0 1 .708 0z">
+                      d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.793l-.396.397a.5.5 0 1 1-.708-.708l1.25-1.25a.5.5 0 0 1 .708 0z" />
                   </svg>
                 </a>-->
 
@@ -142,7 +142,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                     class="bi bi-instagram" viewBox="0 0 16 16">
                     <path
-                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                   </svg>
                   <span>Instagram</span>
                 </a>
@@ -156,43 +156,43 @@
       <article id="skills" class="section my-5">
         <h2 class="text-secondary text-opacity-75 text-center mb-3 reveal">
           🔥 Habilidades y conocimientos
-        </h3>
+        </h2>
         <div class="d-flex flex-wrap icons-container gap-3 justify-content-center">
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon1.png" class="img-fluid" alt="HTML" title="HTML">
+            <img src="./img/tech-icons/tech-icon1.png" class="img-fluid" alt="HTML" title="HTML" />
           </div>
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon2.png" class="img-fluid" alt="JS" title="JS">
+            <img src="./img/tech-icons/tech-icon2.png" class="img-fluid" alt="JS" title="JS" />
           </div>
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon3.png" class="img-fluid" alt="CSS" title="CSS">
+            <img src="./img/tech-icons/tech-icon3.png" class="img-fluid" alt="CSS" title="CSS" />
           </div>
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon4.png" class="img-fluid" alt="Node.js" title="Node.js">
+            <img src="./img/tech-icons/tech-icon4.png" class="img-fluid" alt="Node.js" title="Node.js" />
           </div>
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon5.png" class="img-fluid" alt="React" title="React">
+            <img src="./img/tech-icons/tech-icon5.png" class="img-fluid" alt="React" title="React" />
           </div>
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon7.png" class="img-fluid" alt="Bootstrap" title="Bootstrap">
+            <img src="./img/tech-icons/tech-icon7.png" class="img-fluid" alt="Bootstrap" title="Bootstrap" />
           </div>
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon8.png" class="img-fluid" alt="PHP" title="PHP">
+            <img src="./img/tech-icons/tech-icon8.png" class="img-fluid" alt="PHP" title="PHP" />
           </div>
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon9.png" class="img-fluid" alt="Docker" title="Docker">
+            <img src="./img/tech-icons/tech-icon9.png" class="img-fluid" alt="Docker" title="Docker" />
           </div>
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon10.png" class="img-fluid" alt="WordPress" title="WordPress">
+            <img src="./img/tech-icons/tech-icon10.png" class="img-fluid" alt="WordPress" title="WordPress" />
           </div>
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon11.png" class="img-fluid" alt="MongoDB" title="MongoDB">
+            <img src="./img/tech-icons/tech-icon11.png" class="img-fluid" alt="MongoDB" title="MongoDB" />
           </div>
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon12.png" class="img-fluid" alt="SQL" title="SQL">
+            <img src="./img/tech-icons/tech-icon12.png" class="img-fluid" alt="SQL" title="SQL" />
           </div>
           <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon13.png" class="img-fluid" alt="Linux" title="Linux">
+            <img src="./img/tech-icons/tech-icon13.png" class="img-fluid" alt="Linux" title="Linux" />
           </div>
         </div>
       </article>
@@ -209,7 +209,7 @@
         <div class="d-flex gap-3 flex-sm-column flex-fill">
           <article class="flex-fill card bento-card reveal">
             <h3 class="visually-hidden">Proyecto destacado</h3>
-            <img src="./img/projects/xiulet-min.png" alt="Vista previa del proyecto" class="img-fluid">
+            <img src="./img/projects/xiulet-min.png" alt="Vista previa del proyecto" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Página Web</span>
@@ -220,7 +220,7 @@
 
           <article class="flex-fill card bento-card reveal">
             <h3 class="visually-hidden">Proyecto destacado</h3>
-            <img src="./img/projects/asma-logo.png" alt="Vista previa del proyecto" class="img-fluid">
+            <img src="./img/projects/asma-logo.png" alt="Vista previa del proyecto" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Página Web</span>
@@ -233,7 +233,7 @@
         <div class="d-flex gap-3 flex-column flex-fill">
           <article class="flex-fill card bento-card reveal">
             <h3 class="visually-hidden">Proyecto destacado</h3>
-            <img src="./img/projects/antogeitor.png" alt="Vista previa del proyecto" class="img-fluid">
+            <img src="./img/projects/antogeitor.png" alt="Vista previa del proyecto" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Mobile App</span>
@@ -245,7 +245,7 @@
         <div class="d-flex gap-3 flex-sm-column flex-fill">
           <article class="flex-fill card bento-card reveal">
             <h3 class="visually-hidden">Proyecto destacado</h3>
-            <img src="./img/projects/todoApp.png" alt="Vista previa del proyecto" class="img-fluid">
+            <img src="./img/projects/todoApp.png" alt="Vista previa del proyecto" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Web App</span>
@@ -256,7 +256,7 @@
 
           <article class="flex-fill card bento-card reveal">
             <h3 class="visually-hidden">Proyecto destacado</h3>
-            <img src="./img/projects/topRating.png" alt="Vista previa del proyecto" class="img-fluid">
+            <img src="./img/projects/topRating.png" alt="Vista previa del proyecto" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Mobile App</span>
@@ -266,7 +266,7 @@
 
           <article class="flex-fill card bento-card reveal d-none d-sm-flex">
             <h3 class="visually-hidden">Proyecto destacado (extra)</h3>
-            <img src="./img/projects/imageompressor.png" alt="Vista previa del proyecto" class="img-fluid">
+            <img src="./img/projects/imageompressor.png" alt="Vista previa del proyecto" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Mobile App</span>
@@ -279,7 +279,7 @@
         <div class="d-flex gap-3 flex-column flex-fill">
           <article class="flex-fill card bento-card reveal d-sm-none d-sm-flex">
             <h3 class="visually-hidden">Proyecto destacado (oculto en desktop)</h3>
-            <img src="./img/projects/imageompressor.png" alt="Vista previa del proyecto" class="img-fluid">
+            <img src="./img/projects/imageompressor.png" alt="Vista previa del proyecto" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Mobile App</span>
@@ -310,9 +310,9 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                 class="bi bi-envelope-arrow-up-fill" viewBox="0 0 16 16">
                 <path
-                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z">
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z" />
                 <path
-                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.793l-.396.397a.5.5 0 1 1-.708-.708l1.25-1.25a.5.5 0 0 1 .708 0z">
+                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.793l-.396.397a.5.5 0 1 1-.708-.708l1.25-1.25a.5.5 0 0 1 .708 0z" />
               </svg>
               <span>Contacto</span>
             </a>
@@ -329,7 +329,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github"
             viewBox="0 0 16 16">
             <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
           </svg>
           Github
         </a>
@@ -338,9 +338,9 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
             class="bi bi-envelope-arrow-up-fill" viewBox="0 0 16 16">
             <path
-              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z">
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z" />
             <path
-              d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.793l-.396.397a.5.5 0 1 1-.708-.708l1.25-1.25a.5.5 0 0 1 .708 0z">
+              d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.793l-.396.397a.5.5 0 1 1-.708-.708l1.25-1.25a.5.5 0 0 1 .708 0z" />
           </svg>
           Email
         </a>
@@ -349,7 +349,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-instagram"
             viewBox="0 0 16 16">
             <path
-              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
           </svg>
           Instagram
         </a>
