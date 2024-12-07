@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="copyright" content="Erik Firmino" />
   <meta name="description"
     content="Erik Firmino, desarrollador de software especializado en soluciones modernas para la web y móviles. Descubre mis proyectos y experiencia." />
   <meta name="keywords"
@@ -41,15 +39,14 @@
 </head>
 
 <body id="index">
-  <a href="#main-content" class="visually-hidden-focusable">Ir al contenido principal</a>
   <!-- Barra de navegación -->
-  <nav style="position: sticky; z-index: 10; top: 0" role="navigation" aria-label="Barra de navegación principal">
+  <nav style="position: sticky; z-index: 10; top: 0" aria-label="Barra de navegación principal">
     <h2 class="visually-hidden">Navegación principal</h2>
     <div class="card border border-1 my-4 m-auto bg-body-tertiary py-2"
       style="max-width: 800px; width: 95%; box-shadow: var(--shadow)">
       <ul class="nav justify-content-center text-center">
         <li class="nav-item flex-fill">
-          <a class="nav-link btn-perfect" data-target="inicio" aria-label="Ir al inicio" href="#index">
+          <a class="nav-link active btn-perfect" data-target="inicio" aria-current="page" href="#index">
             <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16" aria-label="Ir a inicio">
               <path
@@ -84,15 +81,14 @@
     </div>
   </nav>
   <!-- Contenido-->
-  <main role="main" id="main-content" class="d-flex flex-column justify-content-center align-items-center">
+  <main class="d-flex flex-column justify-content-center align-items-center">
     <!-- Inicio -->
     <section id="inicio" class="d-flex flex-column justify-content-center align-items-center" style="min-height: 90vh">
-      <h2 class="visually-hidden">Sección de inicio</h2>
       <!-- Carta presentación-->
       <article id="welcome" class="card bg-body-tertiary mt-0 mt-md-4" style="max-width: 600px; width: 95%">
         <div class="row g-0 p-3">
           <div class="col-md-4 d-none d-sm-none d-md-block text-center my-auto">
-            <img src="./img/Profile.jpeg" class="img-fluid border" alt="Foto de perfil de Erik Firmino"
+            <img src="./img/Profile.jpeg" class="img-fluid border" alt="Avatar"
               style="border-radius: 50%; max-width: 166px" />
           </div>
 
@@ -105,7 +101,7 @@
                 Software Developer
               </h5>
               <div class="d-sm-none my-3 text-center">
-                <img src="./img/Profile.jpeg" class="img-fluid border" alt="Foto de perfil de Erik Firmino"
+                <img src="./img/Profile.jpeg" class="img-fluid border" alt="Avatar"
                   style="border-radius: 50%; max-width: 166px" />
               </div>
               <p class="card-text fw-bold text-center text-sm-start">
@@ -154,7 +150,7 @@
 
       <!-- Slider de habilidades-->
       <article id="skills" class="section my-5">
-        <h2 class="text-secondary text-opacity-75 text-center mb-3 reveal">
+        <h3 class="text-secondary text-opacity-75 text-center mb-3 reveal">
           🔥 Habilidades y conocimientos
         </h3>
         <div class="d-flex flex-wrap icons-container gap-3 justify-content-center">
@@ -208,8 +204,7 @@
       <div class="d-flex gap-3 flex-column flex-sm-row">
         <div class="d-flex gap-3 flex-sm-column flex-fill">
           <article class="flex-fill card bento-card reveal">
-            <h3 class="visually-hidden">Proyecto destacado</h3>
-            <img src="./img/projects/xiulet-min.png" alt="Vista previa del proyecto" class="img-fluid" />
+            <img src="./img/projects/xiulet-min.png" alt="" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Página Web</span>
@@ -219,8 +214,7 @@
           </article>
 
           <article class="flex-fill card bento-card reveal">
-            <h3 class="visually-hidden">Proyecto destacado</h3>
-            <img src="./img/projects/asma-logo.png" alt="Vista previa del proyecto" class="img-fluid" />
+            <img src="./img/projects/asma-logo.png" alt="" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Página Web</span>
@@ -232,8 +226,7 @@
 
         <div class="d-flex gap-3 flex-column flex-fill">
           <article class="flex-fill card bento-card reveal">
-            <h3 class="visually-hidden">Proyecto destacado</h3>
-            <img src="./img/projects/antogeitor.png" alt="Vista previa del proyecto" class="img-fluid" />
+            <img src="./img/projects/antogeitor.png" alt="" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Mobile App</span>
@@ -244,8 +237,7 @@
 
         <div class="d-flex gap-3 flex-sm-column flex-fill">
           <article class="flex-fill card bento-card reveal">
-            <h3 class="visually-hidden">Proyecto destacado</h3>
-            <img src="./img/projects/todoApp.png" alt="Vista previa del proyecto" class="img-fluid" />
+            <img src="./img/projects/todoApp.png" alt="" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Web App</span>
@@ -255,8 +247,7 @@
           </article>
 
           <article class="flex-fill card bento-card reveal">
-            <h3 class="visually-hidden">Proyecto destacado</h3>
-            <img src="./img/projects/topRating.png" alt="Vista previa del proyecto" class="img-fluid" />
+            <img src="./img/projects/topRating.png" alt="" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Mobile App</span>
@@ -265,8 +256,7 @@
           </article>
 
           <article class="flex-fill card bento-card reveal d-none d-sm-flex">
-            <h3 class="visually-hidden">Proyecto destacado (extra)</h3>
-            <img src="./img/projects/imageompressor.png" alt="Vista previa del proyecto" class="img-fluid" />
+            <img src="./img/projects/imageompressor.png" alt="" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Mobile App</span>
@@ -278,8 +268,7 @@
 
         <div class="d-flex gap-3 flex-column flex-fill">
           <article class="flex-fill card bento-card reveal d-sm-none d-sm-flex">
-            <h3 class="visually-hidden">Proyecto destacado (oculto en desktop)</h3>
-            <img src="./img/projects/imageompressor.png" alt="Vista previa del proyecto" class="img-fluid" />
+            <img src="./img/projects/imageompressor.png" alt="" class="img-fluid" />
 
             <div class="text-end">
               <span class="badge text-bg-primary">Mobile App</span>
