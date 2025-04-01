@@ -131,15 +131,6 @@
                   Github
                 </a>
 
-                <!--<a href="#" class="btn btn-sm btn-primary btn-perfect">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                    class="bi bi-envelope-arrow-up-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z" />
-                    <path
-                      d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.793l-.396.397a.5.5 0 1 1-.708-.708l1.25-1.25a.5.5 0 0 1 .708 0z" />
-                  </svg>
-                </a>-->
 
                 <a href="https://www.instagram.com/e.webcodedeveloper/" target="_blank" class="btn btn-sm btn-danger btn-perfect">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
@@ -205,12 +196,12 @@
     <!-- Proyectos -->
     <section id="projects" class="section full-section my-5 d-flex justify-content-center flex-column"
       style="padding-top: 10vh">
-      <h1 class="mb-3 btn-perfect text-secondary text-opacity-75 reveal">
+      <h1 class="mb-3 text-secondary text-opacity-75 reveal display-4 text-center">
         Proyectos destacados
       </h1>
       <div class="d-flex gap-3 flex-column flex-sm-row">
         <div class="d-flex gap-3 flex-sm-column flex-fill">
-          <article class="flex-fill card bento-card reveal">
+          <article class="flex-fill card bento-card reveal" onclick="goToProject('XIULET')">
             <h3 class="visually-hidden">Proyecto destacado</h3>
             <img src="./img/projects/xiulet-min.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
 
@@ -221,7 +212,7 @@
             </div>
           </article>
 
-          <article class="flex-fill card bento-card reveal">
+          <article class="flex-fill card bento-card reveal" onclick="goToProject('ASMA')">
             <h3 class="visually-hidden">Proyecto destacado</h3>
             <img src="./img/projects/asma-logo.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
 
@@ -234,7 +225,7 @@
         </div>
 
         <div class="d-flex gap-3 flex-column flex-fill">
-          <article class="flex-fill card bento-card reveal">
+          <article class="flex-fill card bento-card reveal" onclick="goToProject('ANTOGEITOR')">
             <h3 class="visually-hidden">Proyecto destacado</h3>
             <img src="./img/projects/antogeitor.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
 
@@ -247,7 +238,7 @@
         </div>
 
         <div class="d-flex gap-3 flex-sm-column flex-fill">
-          <article class="flex-fill card bento-card reveal">
+          <article class="flex-fill card bento-card reveal" onclick="goToProject('TODO')">
             <h3 class="visually-hidden">Proyecto destacado</h3>
             <img src="./img/projects/todoApp.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
 
@@ -258,18 +249,18 @@
             </div>
           </article>
 
-          <article class="flex-fill card bento-card reveal">
+          <article class="flex-fill card bento-card reveal" onclick="goToProject('ANDORRAEATS')">
             <h3 class="visually-hidden">Proyecto destacado</h3>
-            <img src="./img/projects/topRating.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
+            <img src="./img/projects/andorraeats.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
 
             <div class="text-end">
-              <span class="badge text-bg-primary">Mobile App</span>
-              <span class="badge text-bg-secondary">React Native</span>
-              <span class="badge text-bg-secondary">PHP</span>
+              <span class="badge text-bg-primary">Web App</span>
+              <span class="badge text-bg-secondary">React</span>
+              <span class="badge text-bg-secondary">Bootstrap</span>
             </div>
           </article>
 
-          <article class="flex-fill card bento-card reveal d-none d-sm-flex">
+          <article class="flex-fill card bento-card reveal d-none d-sm-flex" onclick="goToProject('COMPRESSOR')">
             <h3 class="visually-hidden">Proyecto destacado (extra)</h3>
             <img src="./img/projects/imageompressor.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
 
@@ -371,6 +362,21 @@
     crossorigin="anonymous"></script>
 
   <script>
+    const PROJECTS = {
+      XIULET: "https://elxiulet.com/",
+      ASMA: "https://asma-prototype-web.web.app/",
+      ANTOGEITOR: "https://github.com/ErikWebDeveloper/Antogeitor/blob/main/README.md",
+      TODO: "https://todo-app-3f86f.web.app",
+      ANDORRAEATS: "https://andorraeats.com/",
+      COMPRESSOR: "https://image-compresor-web.web.app/"
+
+
+    }
+
+    function goToProject(project){
+       window.open(PROJECTS[project], '_blank');
+    }
+
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
     // Selecciona todos los enlaces de la navegación
