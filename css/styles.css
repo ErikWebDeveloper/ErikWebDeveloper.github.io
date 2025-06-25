@@ -6,12 +6,56 @@
   --shadow: 0px 4px 4px rgba(119, 119, 119, 0.2);
 }
 
+body[data-bs-theme="dark"] {
+  background: #212529;
+  background: -webkit-linear-gradient(
+    32deg,
+    rgba(33, 37, 41, 1) 0%,
+    rgba(33, 37, 41, 1) 50%,
+    rgba(61, 68, 77, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    32deg,
+    rgba(33, 37, 41, 1) 0%,
+    rgba(33, 37, 41, 1) 50%,
+    rgba(61, 68, 77, 1) 100%
+  );
+  background: linear-gradient(
+    32deg,
+    rgba(33, 37, 41, 1) 0%,
+    rgba(33, 37, 41, 1) 50%,
+    rgba(61, 68, 77, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#212529", endColorstr="#3D444D", GradientType=0);
+}
+
+body[data-bs-theme="light"] {
+  background: #d4d4d4;
+  background: -webkit-linear-gradient(
+    32deg,
+    rgba(212, 212, 212, 1) 0%,
+    rgba(237, 237, 237, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    32deg,
+    rgba(212, 212, 212, 1) 0%,
+    rgba(237, 237, 237, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    32deg,
+    rgba(212, 212, 212, 1) 0%,
+    rgba(237, 237, 237, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#D4D4D4", endColorstr="#FFFFFF", GradientType=0);
+}
 
 .custom-tooltip {
   --bs-tooltip-bg: #225cb4;
   --bs-tooltip-color: var(--bs-white);
 }
-
 
 .nav-link {
   color: var(--secondaryColor) !important;
@@ -73,13 +117,12 @@
   margin: auto;
 }
 
-.reveal{
+.reveal {
   animation: appear linear both;
   animation-timeline: view();
   animation-range: entry 20% cover 30%;
-
 }
-.full-section{
+.full-section {
   min-height: 100vh;
 }
 
@@ -100,6 +143,63 @@
 }
 
 @keyframes appear {
-  from{opacity: 0; scale: 0.9;}
-  to{opacity: 1; scale: 1;}
+  from {
+    opacity: 0;
+    scale: 0.9;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+#welcome {
+  position: relative;
+  border: 4px solid transparent;
+  border-radius: 12px;
+  background-clip: padding-box;
+  z-index: 0;
+  overflow: visible;
+}
+
+#welcome::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 16px; /* un poco más grande que el borde */
+  background: linear-gradient(270deg, #ff00cc, #3333ff, #00ffcc, #ff00cc);
+  background-size: 600% 600%;
+  animation: borderMove 15s ease infinite;
+  z-index: -1;
+  filter: blur(4px);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Para que el borde transparente deje ver el efecto */
+#welcome::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  background: inherit; /* mantiene el fondo original */
+  z-index: -1;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
