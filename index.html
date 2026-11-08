@@ -1,493 +1,401 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Erik · Software Developer · Builder · AI Enthusiast</title>
+    <meta
+      name="description"
+      content="Erik — Software Developer, Builder y AI Enthusiast en Andorra 🇦🇩. Web apps, mobile, mini juegos, herramientas CLI, IA local y audio/DSP."
+    />
+    <meta name="author" content="Erik" />
+    <meta name="theme-color" content="#0b0f19" />
+    <meta name="color-scheme" content="dark" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#333">
-  <meta name="copyright" content="Erik Firmino">
-  <meta name="description"
-    content="Erik Firmino, desarrollador de software especializado en soluciones modernas para la web y móviles. Descubre mis proyectos y experiencia.">
-  <meta name="keywords"
-    content="Erik Firmino, Software Developer, desarrollo web, desarrollo móvil, React, Node.js, programación, tecnología">
-  <meta name="author" content="Erik Firmino">
-  <meta name="robots" content="index, follow">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <title>
-    Erik Firmino - Desarrollador de Software | Proyectos y Soluciones
-    Tecnológicas
-  </title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/slider.css">
+    <!-- Open Graph / redes sociales -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Erik · Software Developer · Builder · AI Enthusiast" />
+    <meta
+      property="og:description"
+      content="Portfolio de Erik: web apps, mobile, mini juegos, CLI tools, IA local y audio/DSP. Andorra 🇦🇩"
+    />
+    <meta property="og:locale" content="es_ES" />
+    <meta name="twitter:card" content="summary" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Erik Firmino - Desarrollador de Software">
-  <meta property="og:description"
-    content="Soy un desarrollador de software enfocado en crear soluciones modernas para la web y aplicaciones móviles.">
-  <meta property="og:image" content="./img/Profile.jpeg">
-  <meta property="og:url" content="https://erikwebdeveloper.github.io">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_ES">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Erik Firmino - Desarrollador de Software">
-  <meta name="twitter:description" content="Explora mis proyectos y habilidades como desarrollador de software.">
-  <meta name="twitter:image" content="./img/Profile.jpeg">
+    <!-- Tipografías: monoespaciada para títulos/terminal + sans-serif para lectura -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-  <link rel="canonical" href="https://erikwebdeveloper.github.io">
-</head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
 
-<body id="index">
-  <a href="#main-content" class="visually-hidden-focusable">Ir al contenido principal</a>
-  <!-- Barra de navegación -->
-  <nav style="position: sticky; z-index: 10; top: 0" aria-label="Barra de navegación principal">
-    <h2 class="visually-hidden">Navegación principal</h2>
-    <div class="card border border-1 my-4 m-auto bg-body-tertiary py-2"
-      style="max-width: 800px; width: 95%; box-shadow: var(--shadow)">
-      <ul class="nav justify-content-center text-center">
-        <li class="nav-item flex-fill">
-          <a class="nav-link btn-perfect" data-target="inicio" aria-label="Ir al inicio" href="#index">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16" aria-label="Ir a inicio">
-              <path
-                d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716q.113.137.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0" />
-            </svg>
-            <span>Inicio</span>
-          </a>
-        </li>
+    <!-- ============================================================
+         Sprite de iconos pixel art (16×16, crispEdges).
+         Se reutiliza con <svg class="icon"><use href="#i-web"></svg>
+         ============================================================ -->
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <symbol id="i-web" viewBox="0 0 16 16">
+        <path
+          fill="currentColor"
+          d="M1 2h14v12H1zM2 5h12v8H2zM2 3h2v1H2zM5 3h2v1H5zM8 3h2v1H8zM11 3h3v1h-3z"
+        />
+        <path fill="currentColor" opacity=".45" d="M4 7h8v1H4zM4 9h5v1H4zM4 11h7v1H4z" />
+      </symbol>
 
-        <li class="nav-item flex-fill">
-          <a class="nav-link btn-perfect" data-target="projects" href="#projects" aria-label="Ir a proyectos">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-fill"
-              viewBox="0 0 16 16" aria-label="Proyectos">
-              <path
-                d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z" />
-            </svg>
-            <span>Proyectos</span>
-          </a>
-        </li>
+      <symbol id="i-mobile" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M4 1h8v14H4z" />
+        <path fill="#0b0f19" d="M5 3h6v9H5z" />
+        <path fill="currentColor" d="M6 13h4v1H6z" />
+      </symbol>
 
-        <li class="nav-item flex-fill">
-          <a class="nav-link btn-perfect" data-target="contacto" href="#contacto" aria-label="Ir a contacto">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-envelope-fill" viewBox="0 0 16 16" aria-label="Contacto">
-              <path
-                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-            </svg>
-            <span>Contacto</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- Contenido-->
-  <main id="main-content" class="d-flex flex-column justify-content-center align-items-center">
-    <!-- Inicio -->
-    <section id="inicio" class="d-flex flex-column justify-content-center align-items-center" style="min-height: 90vh">
-      <h2 class="visually-hidden">Sección de inicio</h2>
-      <!-- Carta presentación-->
-      <article id="welcome" class="card bg-body-tertiary mt-0 mt-md-4" style="max-width: 650px; width: 95%">
-        <div class="row g-0 p-3">
-          <div class="col-md-4 d-none d-sm-none d-md-block text-center my-auto">
-            <img src="./img/Profile.jpeg" class="img-fluid border" alt="Foto de perfil de Erik Firmino"
-              style="border-radius: 50%; max-width: 166px">
+      <symbol id="i-game" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M4 5h8a4 4 0 0 1 0 6H4a4 4 0 0 1 0-6z" />
+        <path fill="#0b0f19" d="M3 3h2v2H3zM4 4h2v2H4zM11 8h2v2h-2z" />
+      </symbol>
+
+      <symbol id="i-terminal" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M1 2h14v12H1z" />
+        <path fill="#0b0f19" d="M2 3h12v10H2z" />
+        <path fill="currentColor" d="M4 6h1v1H4zM5 7h1v1H5zM6 8h1v1H6zM7 9h1v1H7zM4 11h6v1H4z" />
+      </symbol>
+
+      <symbol id="i-chip" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M4 4h8v8H4z" />
+        <path fill="#0b0f19" d="M6 6h4v4H6z" />
+        <path fill="currentColor" d="M6 1h1v3H6zM9 1h1v3H9zM6 12h1v3H6zM9 12h1v3H9zM1 6h3v1H1zM1 9h3v1H1zM12 6h3v1h-3zM12 9h3v1h-3z" />
+      </symbol>
+
+      <symbol id="i-wave" viewBox="0 0 16 16">
+        <path
+          fill="currentColor"
+          d="M2 7h1v2H2zM4 5h1v6H4zM6 3h1v10H6zM8 6h1v4H8zM10 4h1v8h-1zM12 7h1v2h-1zM14 6h1v4h-1z"
+        />
+      </symbol>
+
+      <symbol id="i-star" viewBox="0 0 16 16">
+        <path
+          fill="currentColor"
+          d="M7 1h2v2h2v2h2v2h-2v2h-2v2h-2v-2H7v-2H5V7h2V5h0z"
+          opacity=".9"
+        />
+      </symbol>
+
+      <symbol id="i-github" viewBox="0 0 16 16">
+        <path
+          fill="currentColor"
+          d="M8 0a8 8 0 0 0-2.5 15.6c.4.1.5-.2.5-.4v-1.5c-2 .4-2.5-.9-2.5-.9-.3-.9-.8-1.1-.8-1.1-.7-.5 0-.5 0-.5.7 0 1.1.8 1.1.8.7 1.1 1.8.8 2.2.6 0-.5.3-.8.5-1-1.7-.2-3.5-.9-3.5-3.9 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8a7.4 7.4 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.5 1.1.2 1.9.1 2.1.5.5.8 1.2.8 2.1 0 3-1.8 3.7-3.5 3.9.3.3.6.8.6 1.6v2.3c0 .2.1.5.5.4A8 8 0 0 0 8 0z"
+        />
+      </symbol>
+
+      <symbol id="i-mail" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M1 3h14v10H1z" />
+        <path fill="#0b0f19" opacity=".55" d="M2 4h12v1H2zM2 11h12v1H2z" />
+        <path fill="currentColor" d="M2 4l6 4 6-4v1L8 9 2 5z" />
+      </symbol>
+
+      <symbol id="i-arrow" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M3 7h6V4l5 4-5 4V9H3z" />
+      </symbol>
+
+      <symbol id="i-sound" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M2 6h3l4-3v10l-4-3H2z" />
+        <path fill="currentColor" d="M11 5h1v1h-1zM11 7h1v1h-1zM11 9h1v1h-1zM12 4h1v7h-1zM13 6h1v3h-1z" />
+      </symbol>
+
+      <symbol id="i-mute" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M2 6h3l4-3v10l-4-3H2z" />
+        <path fill="currentColor" d="M10 6h1v1h-1zM11 7h1v1h-1zM12 8h1v1h-1zM11 9h1v1h-1zM10 10h1v1h-1z" />
+        <path fill="currentColor" d="M11 5l4 6h-1l-4-6zM15 5l-4 6h-1l4-6z" opacity=".7" />
+      </symbol>
+
+      <symbol id="i-sprite" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M8 6h16v4H8zM6 8h2v6H6zM24 8h2v6h-2zM10 10h12v4H10z" />
+        <path fill="currentColor" opacity=".85" d="M10 12h12v10H10zM12 16h2v2h-2zM18 16h2v2h-2zM14 20h4v2h-4z" />
+        <path fill="currentColor" opacity=".6" d="M4 22h24v2H4zM8 24h16v6H8z" />
+      </symbol>
+    </svg>
+
+    <!-- ============================================================
+         Cabecera
+         ============================================================ -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#hero" data-sound>
+          <svg class="icon brand-mark" aria-hidden="true"><use href="#i-sprite"></use></svg>
+          <span class="brand-name">erik<span class="brand-dot">.</span>dev</span>
+        </a>
+
+        <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="#focus" data-nav-link>Enfoque</a></li>
+            <li><a href="#work" data-nav-link>Proyectos</a></li>
+            <li><a href="#stack" data-nav-link>Stack</a></li>
+            <li><a href="#contact" data-nav-link>Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <p class="status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Disponible</span>
+          </p>
+
+          <button
+            class="icon-btn"
+            type="button"
+            data-sound-toggle
+            aria-pressed="false"
+            aria-label="Activar sonidos de terminal"
+          >
+            <svg class="icon" aria-hidden="true"><use href="#i-mute"></use></svg>
+          </button>
+
+          <button
+            class="icon-btn nav-toggle"
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Abrir menú"
+          >
+            <span class="pixel-burger" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ==========================================================
+           1 · Hero
+           ========================================================== -->
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker"><span class="pixel-arrow" aria-hidden="true">&raquo;</span> Hola, soy Erik</p>
+            <h1 class="hero-title">
+              <span class="wave-text">👋 Hi, I'm Erik</span>
+              <span class="caret" aria-hidden="true"></span>
+            </h1>
+            <p class="hero-roles">
+              Software Developer <span class="dot-sep" aria-hidden="true">·</span> Builder
+              <span class="dot-sep" aria-hidden="true">·</span> AI Enthusiast
+            </p>
+            <p class="hero-bio">
+              Construyo software: interfaces que responden rápido, herramientas que de verdad se usan y
+              experimentos con los que aprendo algo nuevo cada semana.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#work" data-sound>
+                Ver proyectos
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+              </a>
+              <a class="btn btn-ghost" href="https://github.com/ErikWebDeveloper" data-link="github" rel="me noopener" target="_blank" data-sound>
+                <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+                <span data-link-text="github">GitHub</span>
+              </a>
+              <a class="btn btn-ghost" href="mailto:erikcodedeveloper@gmail.com" data-link="email" data-sound>
+                <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+                Email
+              </a>
+            </div>
+
+            <ul class="hero-meta">
+              <li>
+                <span class="meta-label">Ubicación</span>
+                <span class="meta-value">Andorra 🇦🇩</span>
+              </li>
+              <li>
+                <span class="meta-label">Hora local</span>
+                <span class="meta-value" data-local-time>--:--</span>
+              </li>
+              <li>
+                <span class="meta-label">Contacto</span>
+                <span class="meta-value" data-link-text="email">erikcodedeveloper@gmail.com</span>
+              </li>
+            </ul>
           </div>
 
-          <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title fw-bold text-center text-sm-start">
-                Erik Firmino
-              </h3>
-              <h5 class="card-subtitle mb-2 text-body-secondary text-center text-sm-start">
-                Software Developer
-              </h5>
-              <div class="d-sm-none my-3 text-center">
-                <img src="./img/Profile.jpeg" class="img-fluid border" alt="Foto de perfil de Erik Firmino"
-                  style="border-radius: 50%; max-width: 166px">
+          <!-- Terminal estilo 8-bit: arranque en vivo -->
+          <aside class="hero-panel" aria-label="Detalle de la terminal">
+            <div class="panel-window">
+              <div class="panel-bar">
+                <span class="pixel-dot" style="--c: var(--amber)" aria-hidden="true"></span>
+                <span class="pixel-dot" style="--c: var(--purple)" aria-hidden="true"></span>
+                <span class="pixel-dot" style="--c: var(--green)" aria-hidden="true"></span>
+                <span class="panel-title">erik@andorra: ~</span>
               </div>
-              <p class="card-text fw-bold text-center text-sm-start">
-                🇦🇩 Andorra | 🚀 Web & Mobile Apps
-              </p>
-              <p class="card-text">
-                ¡Hola! 👋 Soy desarrollador web con <strong>5+ años</strong> de experiencia en el desarrollo de aplicaciones web.  
-                <br/> <br/>
-                Soy <strong>autodidacta</strong> y disfruto mucho programando.  
-                <br/>
-                <br/>
-                <i>Siempre estoy buscando nuevos retos que me hagan mejorar como programador 🚀.</i>
-              </p>
-              
+              <pre class="panel-body" data-boot-log aria-live="off">
+<span class="boot-line muted">$ ./whoami --verbose</span></pre
+              >
+              <div class="panel-cursor" aria-hidden="true"><span></span></div>
+            </div>
 
-              <div class="text-end mt-4">
-                <a href="https://github.com/ErikWebDeveloper" target="_blank" class="btn btn-sm btn-dark btn-perfect">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                  </svg>
-                  Github
+            <ul class="hero-badges">
+              <li class="badge badge-cyan">Linux</li>
+              <li class="badge badge-amber">Javascript</li>
+              <li class="badge badge-purple">AI</li>
+              <li class="badge badge-green">Hardware</li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="pixel-rule" aria-hidden="true"></div>
+      </section>
+
+      <!-- ==========================================================
+           2 · Lo que hago / Enfoque
+           ========================================================== -->
+      <section class="section" id="focus">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="kicker"><span class="pixel-arrow" aria-hidden="true">&raquo;</span> 01 / Enfoque</p>
+            <h2 class="section-title">Lo que construyo</h2>
+            <p class="section-lead">
+              Seis terrenos donde me lo paso bien: del navegador a la terminal, del código a la música y de las matemáticas al videojuego.
+            </p>
+          </header>
+
+          <ul class="focus-grid" data-focus-list>
+            <li class="card card-focus skeleton-card" aria-hidden="true"></li>
+            <li class="card card-focus skeleton-card" aria-hidden="true"></li>
+            <li class="card card-focus skeleton-card" aria-hidden="true"></li>
+            <li class="card card-focus skeleton-card" aria-hidden="true"></li>
+            <li class="card card-focus skeleton-card" aria-hidden="true"></li>
+            <li class="card card-focus skeleton-card" aria-hidden="true"></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           3 · Proyectos y experimentos
+           ========================================================== -->
+      <section class="section section-alt" id="work">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="kicker"><span class="pixel-arrow" aria-hidden="true">&raquo;</span> 02 / Showcase</p>
+            <h2 class="section-title">Proyectos &amp; experimentos</h2>
+            <p class="section-lead">
+              Productos que uso a diario y prototipos que existen para entender algo nuevo.
+            </p>
+          </header>
+
+          <div class="work-toolbar reveal">
+            <div class="filters" role="group" aria-label="Filtrar proyectos">
+              <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Todo</button>
+              <button class="filter" type="button" data-filter="product" aria-pressed="false">Productos</button>
+              <button class="filter" type="button" data-filter="experiment" aria-pressed="false">Experimentos</button>
+            </div>
+            <p class="work-count" data-work-count aria-live="polite"></p>
+          </div>
+
+          <ul class="work-grid" data-projects-list>
+            <li class="card skeleton-card" aria-hidden="true"></li>
+            <li class="card skeleton-card" aria-hidden="true"></li>
+            <li class="card skeleton-card" aria-hidden="true"></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           4 · Stack
+           ========================================================== -->
+      <section class="section" id="stack">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="kicker"><span class="pixel-arrow" aria-hidden="true">&raquo;</span> 03 / Tooling</p>
+            <h2 class="section-title">Con qué trabajo</h2>
+            <p class="section-lead">
+              Sin porcentajes ni barras de nivel. Solo las herramientas que uso casi todos los días.
+            </p>
+          </header>
+
+          <ul class="stack-grid" data-stack-list>
+            <li class="card skeleton-card" aria-hidden="true"></li>
+            <li class="card skeleton-card" aria-hidden="true"></li>
+            <li class="card skeleton-card" aria-hidden="true"></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           5 · Contacto
+           ========================================================== -->
+      <section class="section section-contact" id="contact">
+        <div class="container">
+          <div class="contact-card reveal">
+            <div class="pixel-rule" aria-hidden="true"></div>
+            <p class="kicker"><span class="pixel-arrow" aria-hidden="true">&raquo;</span> 04 / Contacto</p>
+            <h2 class="section-title">¿Hablamos?</h2>
+            <p class="contact-lead">
+              Si tienes una idea, una duda o un proyecto que necesita ayuda, escríbeme.
+              Respondo rápido.
+            </p>
+
+            <ul class="contact-links">
+              <li>
+                <a class="contact-link" href="mailto:erikcodedeveloper@gmail.com" data-link="email" data-sound>
+                  <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+                  <span class="contact-link-text" data-link-text="email">erikcodedeveloper@gmail.com</span>
                 </a>
+              </li>
+              <li>
+                <a
+                  class="contact-link"
+                  href="https://github.com/ErikWebDeveloper"
+                  data-link="github"
+                  rel="me noopener"
+                  target="_blank"
+                  data-sound
+                >
+                  <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+                  <span data-link-text="github">GitHub</span>
+                  <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </li>
+            </ul>
 
-              </div>
-            </div>
+            <p class="contact-thanks" title="arigatō gozaimasu (muchas gracias en japonés)">
+              ありがとうございます
+              <svg class="icon icon-sm" aria-hidden="true"><use href="#i-star"></use></svg>
+            </p>
           </div>
         </div>
-      </article>
+      </section>
+    </main>
 
-      <!-- Slider de habilidades-->
-      <article id="skills" class="section my-5">
-        <h2 class="text-opacity-75 text-center mb-3 reveal">
-          🔥 Habilidades y conocimientos
-        </h2>
-        <div class="d-flex flex-wrap icons-container gap-3 justify-content-center">
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon1.webp" class="img-fluid" alt="HTML" title="HTML"
-              data-bs-toggle="tooltip" data-bs-title="HTML" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon2.webp" class="img-fluid" alt="JavaScript" title="JavaScript"
-              data-bs-toggle="tooltip" data-bs-title="JavaScript" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon3.webp" class="img-fluid" alt="CSS" title="CSS" data-bs-toggle="tooltip"
-              data-bs-title="CSS" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon4.webp" class="img-fluid" alt="Node.js" title="Node.js"
-              data-bs-toggle="tooltip" data-bs-title="Node.js" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon5.webp" class="img-fluid" alt="React" title="React"
-              data-bs-toggle="tooltip" data-bs-title="React" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon7.webp" class="img-fluid" alt="Bootstrap" title="Bootstrap"
-              data-bs-toggle="tooltip" data-bs-title="Bootstrap" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon10.png" class="img-fluid" alt="WordPress" title="WordPress"
-              data-bs-toggle="tooltip" data-bs-title="WordPress" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-supabase.png" class="img-fluid" alt="Supabase" title="Supabase"
-              data-bs-toggle="tooltip" data-bs-title="Supabase" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-firebase.png" class="img-fluid" alt="Firebase" title="Firebase"
-              data-bs-toggle="tooltip" data-bs-title="Firebase" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-strapi.webp" class="img-fluid" alt="Strapi 5" title="Strapi 5"
-              data-bs-toggle="tooltip" data-bs-title="Strapi 5" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon12.png" class="img-fluid" alt="SQL" title="SQL" data-bs-toggle="tooltip"
-              data-bs-title="SQL" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon13.png" class="img-fluid" alt="Linux" title="Linux"
-              data-bs-toggle="tooltip" data-bs-title="Linux" data-bs-custom-class="custom-tooltip">
-          </div>
-        </div>
-        
-      </article>
-
-       <!-- Slider de conocimientos-->
-      <article id="basic-skills" class="section my-5">
-        <h2 class="text-opacity-75 text-center mb-3 reveal">
-          🧠 Conocimientos básicos/aprendiendo ...
-        </h2>
-        <div class="d-flex flex-wrap icons-container gap-3 justify-content-center">
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-ts.webp" class="img-fluid" alt="TypeScript" title="TypeScript"
-              data-bs-toggle="tooltip" data-bs-title="TypeScript" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon8.png" class="img-fluid" alt="PHP" title="PHP" data-bs-toggle="tooltip"
-              data-bs-title="PHP" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon11.webp" class="img-fluid" alt="MongoDB" title="MongoDB"
-              data-bs-toggle="tooltip" data-bs-title="MongoDB" data-bs-custom-class="custom-tooltip">
-          </div>
-          <div class="card reveal">
-            <img src="./img/tech-icons/tech-icon9.png" class="img-fluid" alt="Docker" title="Docker"
-              data-bs-toggle="tooltip" data-bs-title="Docker" data-bs-custom-class="custom-tooltip">
-          </div>
-        </div>
-      </article>
-
-    </section>
-
-    <!-- Proyectos -->
-    <section id="projects" class="section full-section my-5 d-flex justify-content-center flex-column"
-      style="padding-top: 10vh">
-      <h1 class="mb-3 text-opacity-75 reveal display-4 text-center">
-        Proyectos terminados
-      </h1>
-      <span class="text-secondary text-opacity-75 reveal text-center mb-4 d-none d-lg-block">
-        Pase el cursor para ver la descripción o haga clic para visitar el proyecto.
-      </span>
-      
-      <div class="d-flex gap-3 flex-column flex-sm-row">
-        <div class="d-flex gap-3 flex-sm-column flex-fill">
-          <article class="flex-fill card bento-card reveal" onclick="goToProject('TODO')" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Una aplicación sencilla y moderna para gestionar tus listas de tareas, con soporte para almacenamiento local o en la nube mediante JSONBin.io. Ideal para organizar tus ideas, tareas o proyectos desde cualquier navegador. 🌐🗂️">
-            <h3 class="visually-hidden">Proyecto terminado</h3>
-            <img src="./img/projects/todoApp.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
-
-            <div class="text-end">
-              <span class="badge text-bg-primary">Web App</span>
-              <span class="badge text-bg-secondary">React</span>
-              <span class="badge text-bg-secondary">Bootstrap</span>
-            </div>
-          </article>
-
-          <article class="flex-fill card bento-card reveal" onclick="goToProject('ANDORRAEATS')" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Andorra Eats es una app web que funciona como una guía gastronómica para descubrir restaurantes y sitios de comida en Andorra 🍴. Recopila información útil para ayudarte a elegir dónde comer, tanto si vives aquí como si estás de visita.">
-            <h3 class="visually-hidden">Proyecto terminado</h3>
-            <img src="./img/projects/andorraeats.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
-
-            <div class="text-end">
-              <span class="badge text-bg-primary">Web App</span>
-              <span class="badge text-bg-secondary">React</span>
-              <span class="badge text-bg-secondary">Bootstrap</span>
-            </div>
-          </article>
-
-          <article class="flex-fill card bento-card reveal d-none d-sm-flex" onclick="goToProject('COMPRESSOR')" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Image Web Compressor es una app web sencilla para comprimir imágenes 📷💨. Es un proyecto creado con fines educativos para aprender y experimentar con algoritmos de compresión 🧠. La interfaz aún se puede mejorar, pero ¡funciona! ✅">
-            <h3 class="visually-hidden">Proyecto terminado (extra)</h3>
-            <img src="./img/projects/imageompressor.webp" alt="Vista previa del proyecto" class="img-fluid"
-              loading="lazy">
-
-            <div class="text-end">
-              <span class="badge text-bg-primary">Web App</span>
-              <span class="badge text-bg-secondary">React</span>
-              <span class="badge text-bg-secondary">Bootstrap</span>
-            </div>
-          </article>
-        </div>
-
-        <div class="d-flex gap-3 flex-column flex-fill">
-          <article class="flex-fill card bento-card reveal" onclick="goToProject('ANTOGEITOR')" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title=" Antogeitor es una aplicación diseñada para ayudarte a llevar un registro diario de tus comidas, calorías y esos antojos irresistibles. Ideal para mantenerte al tanto de tus hábitos alimenticios y organizar tu día a día de manera simple y eficiente. 🌟">
-            <h3 class="visually-hidden">Proyecto terminado</h3>
-            <img src="./img/projects/antogeitor.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
-
-            <div class="text-end">
-              <span class="badge text-bg-primary">Mobile App</span>
-              <span class="badge text-bg-secondary">React Native</span>
-              <span class="badge text-bg-secondary">SQLite</span>
-              <span class="badge text-bg-secondary">Android</span>
-
-            </div>
-          </article>
-        </div>
-
-        <div class="d-flex gap-3 flex-sm-column flex-fill">
-          <article class="flex-fill card bento-card reveal" onclick="goToProject('XIULET')" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="El Xiulet es una web informativa para una guardería infantil 👶🎨. Está pensada para que madres, padres y familias conozcan los servicios, actividades y valores del centro educativo 🏫. Un espacio cálido y cercano donde cada niño y niña puede crecer feliz 💛.">
-            <h3 class="visually-hidden">Proyecto terminado</h3>
-            <img src="./img/projects/xiulet-min.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
-
-            <div class="text-end">
-              <span class="badge text-bg-primary">Página Web</span>
-              <span class="badge text-bg-secondary">HTML</span>
-              <span class="badge text-bg-secondary">PHP</span>
-            </div>
-          </article>
-
-          <article class="flex-fill card bento-card reveal" onclick="goToProject('ASMA')" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="ASMA es una propuesta de página web para la Asociación de Músicos de Andorra 🎶🇦🇩. Pensada como un espacio para dar visibilidad a artistas locales, compartir eventos y fomentar la cultura musical en el país 🎤🎻. Aunque no está en producción, fue creada como idea para impulsar la comunidad musical.">
-            <h3 class="visually-hidden">Proyecto terminado</h3>
-            <img src="./img/projects/asma-logo.webp" alt="Vista previa del proyecto" class="img-fluid" loading="lazy">
-
-            <div class="text-end">
-              <span class="badge text-bg-primary">Página Web</span>
-              <span class="badge text-bg-secondary">HTML</span>
-              <span class="badge text-bg-secondary">PHP</span>
-            </div>
-          </article>
-        </div>
-
-        <div class="d-flex gap-3 flex-column flex-fill">
-          <article class="flex-fill card bento-card reveal d-sm-none d-sm-flex">
-            <h3 class="visually-hidden">Proyecto terminado (oculto en desktop)</h3>
-            <img src="./img/projects/imageompressor.webp" alt="Vista previa del proyecto" class="img-fluid"
-              loading="lazy">
-
-            <div class="text-end">
-              <span class="badge text-bg-primary">Web App</span>
-              <span class="badge text-bg-secondary">React</span>
-              <span class="badge text-bg-secondary">Bootstrap</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Contacto-->
-  <section id="contacto" class="section full-section d-flex align-items-center flex-column justify-content-center">
-    <!-- Carta contacto-->
-    <div class="d-flex flex-column flex-fill justify-content-center reveal">
-      <div class="w-100">
-        <article class="text-center">
-          <h3 class="mb-4 fw-bold">
-            Actualmente estoy abierto a nuevas oportunidades full-time o freelance.
-          </h3>
-          <h5 class="mb-4 fw-normal text-secondary">
-            Busco proyectos desafiantes donde pueda aportar y crecer profesionalmente.
-          </h5>
-          <div>
-            <a href="mailto:erikcodedeveloper@gmail.com" role="button" class="btn btn-primary btn-perfect">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                class="bi bi-envelope-arrow-up-fill" viewBox="0 0 16 16">
-                <path
-                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z" />
-                <path
-                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.793l-.396.397a.5.5 0 1 1-.708-.708l1.25-1.25a.5.5 0 0 1 .708 0z" />
-              </svg>
-              <span>Contáctame</span>
-            </a>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <!--Footer-->
-    <footer class="text-center py-3">
-      <h6>🤗 Gracias por tu visita!</h6>
-      <div>
-        <a href="https://github.com/ErikWebDeveloper" target="_blank" class="btn btn-sm btn-perfect">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github"
-            viewBox="0 0 16 16">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-          </svg>
-          Github
-        </a>
-
-        <a href="mailto:erikcodedeveloper@gmail.com" class="btn btn-sm btn-perfect">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-            class="bi bi-envelope-arrow-up-fill" viewBox="0 0 16 16">
-            <path
-              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z" />
-            <path
-              d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.793l-.396.397a.5.5 0 1 1-.708-.708l1.25-1.25a.5.5 0 0 1 .708 0z" />
-          </svg>
-          Email
-        </a>
+    <!-- ============================================================
+         Footer
+         ============================================================ -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">
+          <span data-current-year>2026</span> · Erik · Andorra 🇦🇩
+        </p>
+        <p class="footer-note"><i>«Cualquier tecnología suficientemente avanzada es indistinguible de la magia»</i>. — <strong>Arthur C. Clarke</strong></p>
       </div>
     </footer>
-  </section>
 
+    <noscript>
+      <div class="noscript-note">
+        <p>
+          JavaScript está desactivado, así que las listas de proyectos y stack no se generan. Pero el contacto funciona:
+          <a href="mailto:erikcodedeveloper@gmail.com">erikcodedeveloper@gmail.com</a> ·
+          <a href="https://github.com/ErikWebDeveloper" rel="noopener">github.com/ErikWebDeveloper</a>
+        </p>
+      </div>
+    </noscript>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-
-  <script>
-  
-    const PROJECTS = {
-      XIULET: "https://elxiulet.com/",
-      ASMA: "https://asma-prototype-web.web.app/",
-      ANTOGEITOR: "https://github.com/ErikWebDeveloper/Antogeitor/blob/main/README.md",
-      TODO: "https://todo-app-3f86f.web.app",
-      ANDORRAEATS: "https://andorraeats.com/",
-      COMPRESSOR: "https://image-compresor-web.web.app/"
-
-
-    }
-
-    function goToProject(project) {
-      window.open(PROJECTS[project], '_blank');
-    }
-
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-    // Selecciona todos los enlaces de la navegación
-    const navLinks = document.querySelectorAll(".nav-link");
-    // Obtener todas las secciones
-    const sections = document.querySelectorAll("section");
-
-    // Agrega un evento de clic a cada enlace
-    navLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        // Remueve la clase 'active' de todos los enlaces
-        navLinks.forEach((nav) => nav.classList.remove("active"));
-
-        // Agrega la clase 'active' al enlace clicado
-        link.classList.add("active");
-      });
-    });
-
-    function setThemeBasedOnPreference() {
-      // Detectar la preferencia del usuario
-      const isDarkMode = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-
-      // Cambiar el atributo data-bs-theme del body
-      document.body.setAttribute(
-        "data-bs-theme",
-        isDarkMode ? "dark" : "light"
-      );
-    }
-
-    // Ejecutar al cargar la página
-    setThemeBasedOnPreference();
-
-    // Detectar cambios en el tema del sistema y actualizar dinámicamente
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (event) => {
-        const isDarkMode = event.matches; // `event.matches` es true si el modo oscuro está activo
-        document.body.setAttribute(
-          "data-bs-theme",
-          isDarkMode ? "dark" : "light"
-        );
-      });
-
-    // Función que detecta la sección visible
-    function setActiveSection() {
-      let currentSection = "";
-
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const scrollPosition = window.scrollY + window.innerHeight / 2;
-
-        // Si el scroll está dentro de la sección
-        if (
-          scrollPosition >= sectionTop &&
-          scrollPosition <= sectionTop + sectionHeight
-        ) {
-          currentSection = section.id;
-        }
-      });
-
-      // Cambiar la clase activa en los enlaces
-      if (currentSection !== "") {
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("data-target") === currentSection) {
-            link.classList.add("active");
-          }
-        });
-      }
-    }
-
-    // Ejecutar la función cuando haga scroll
-    window.addEventListener("scroll", setActiveSection);
-
-    // Llamar a la función al cargar la página para establecer el estado inicial
-    setActiveSection();
-  </script>
-</body>
-
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/render.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>

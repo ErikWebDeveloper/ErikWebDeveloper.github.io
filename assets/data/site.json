@@ -1,0 +1,150 @@
+{
+  "links": {
+    "github": {
+      "label": "GitHub",
+      "handle": "@ErikWebDeveloper",
+      "url": "https://github.com/ErikWebDeveloper"
+    },
+    "email": {
+      "label": "erikcodedeveloper@gmail.com",
+      "url": "mailto:erikcodedeveloper@gmail.com"
+    }
+  },
+  "focus": [
+    {
+      "id": "web",
+      "icon": "i-web",
+      "title": "Web Apps",
+      "description": "Interfaces rápidas, accesibles y con ese toque retro que nadie más se atreve a meter.",
+      "tags": ["TypeScript", "React", "Vite"]
+    },
+    {
+      "id": "mobile",
+      "icon": "i-mobile",
+      "title": "Mobile",
+      "description": "Apps ligeras que caben en la mano y funcionan incluso con la cobertura de la montaña a cero.",
+      "tags": ["React Native", "Expo", "SQLite"]
+    },
+    {
+      "id": "games",
+      "icon": "i-game",
+      "title": "Mini Games",
+      "description": "Mundos pequeños, mecánicas afiladas y mucho WebGL. Aquí es donde más aprendo.",
+      "tags": ["Three.js", "WebGL", "Canvas"]
+    },
+    {
+      "id": "cli",
+      "icon": "i-terminal",
+      "title": "CLI Tools",
+      "description": "Utilidades para terminal que resuelven algo real en cinco líneas de script.",
+      "tags": ["Node.js", "Bash", "npm"]
+    },
+    {
+      "id": "ai",
+      "icon": "i-chip",
+      "title": "IA Local",
+      "description": "Modelos corriendo en mi propia máquina: privacidad, coste cero y mucha experimentación.",
+      "tags": ["Python", "LLMs", "Embeddings"]
+    },
+    {
+      "id": "audio",
+      "icon": "i-wave",
+      "title": "Audio / DSP",
+      "description": "Síntesis, filtros y visualizaciones de sonido directamente en el navegador.",
+      "tags": ["Web Audio", "FFT", "DSP"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "quick-clip",
+      "title": "Quick Clip",
+      "kind": "product",
+      "year": "2026",
+      "status": "Open source",
+      "summary": "Editor de video de escritorio para Linux, con soporte principal en Ubuntu, rápido y minimalista, con una interfaz oscura de acentos neón. Construido con PyQt6 y FFmpeg.",
+      "stack": ["Python", "Shell"],
+      "links": {
+        "repo": "https://github.com/ErikWebDeveloper/QuickClip",
+        "demo": null
+      }
+    },
+    {
+      "id": "uno-docker",
+      "title": "Cozy UNO Docker",
+      "kind": "product",
+      "summary": "UNO clásico multijugador en tiempo real con WebSockets. Interfaz cozy, mobile-first y sin base de datos.",
+      "year": "2026",
+      "status": "Open source",
+      "stack": ["TypeScript", "CSS", "JavaScript", "HTML", "Dockerfile"],
+      "links": {
+        "repo": "https://github.com/ErikWebDeveloper/UNO-docker",
+        "demo": null
+      }
+    },
+    {
+      "id": "plano",
+      "title": "Plano",
+      "kind": "product",
+      "summary": "Aplicación web minimalista para organizar proyectos con un diagrama de Gantt. Permite planificar tareas, ajustar fechas.",
+      "year": "2026",
+      "status": "En producción",
+      "stack": ["TypeScript", "CSS", "JavaScript"],
+      "links": {
+        "repo": "https://github.com/ErikWebDeveloper/zen-chart-builder",
+        "demo": "http://zen-chart-builder-87b6.vercel.app/"
+      }
+    },
+    {
+      "id": "tetris-3d",
+      "title": "Cozy Tetris 3D",
+      "kind": "game",
+      "summary": "Juego de bloques que rompe la cuarta pared: en lugar de un tablero plano, cada pieza cae dentro de un pozo tridimensional.",
+      "year": "2026",
+      "status": "Experimento",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "links": {
+        "repo": "https://github.com/ErikWebDeveloper/TetrisCozy3D",
+        "demo": "https://tetriscozy3d.vercel.app/"
+      }
+    }
+  ],
+  "stack": [
+    {
+      "id": "languages",
+      "title": "Lenguajes",
+      "items": ["JavaScript", "TypeScript", "Python", "HTML", "CSS", "SQL"]
+    },
+    {
+      "id": "frontend",
+      "title": "Frontend",
+      "items": ["React", "Three.js", "WebGL", "Vite", "Web Audio API"]
+    },
+    {
+      "id": "backend",
+      "title": "Backend",
+      "items": [
+        "Node.js",
+        "REST APIs",
+        "WebSockets",
+        "PostgreSQL",
+        "SQLite",
+        "FastAPI"
+      ]
+    },
+    {
+      "id": "infra",
+      "title": "Infraestructura",
+      "items": ["Linux", "Docker", "Supabase", "Git", "GitHub Actions", "Nginx"]
+    },
+    {
+      "id": "ai",
+      "title": "IA & Datos",
+      "items": ["LLMs locales", "Ollama", "Embeddings", "Pandas"]
+    },
+    {
+      "id": "interests",
+      "title": "Curiosidades",
+      "items": ["Pixel art", "Chiptune", "Synths", "Hardware antiguo"]
+    }
+  ]
+}
