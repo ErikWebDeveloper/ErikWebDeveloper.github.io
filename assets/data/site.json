@@ -71,7 +71,7 @@
     {
       "id": "uno-docker",
       "title": "Cozy UNO Docker",
-      "kind": "product",
+      "kind": "game",
       "summary": "UNO clásico multijugador en tiempo real con WebSockets. Interfaz cozy, mobile-first y sin base de datos.",
       "year": "2026",
       "status": "Open source",
@@ -100,11 +100,38 @@
       "kind": "game",
       "summary": "Juego de bloques que rompe la cuarta pared: en lugar de un tablero plano, cada pieza cae dentro de un pozo tridimensional.",
       "year": "2026",
-      "status": "Experimento",
+      "status": "En producción",
       "stack": ["HTML", "CSS", "JavaScript"],
       "links": {
         "repo": "https://github.com/ErikWebDeveloper/TetrisCozy3D",
         "demo": "https://tetriscozy3d.vercel.app/"
+      }
+    },
+    
+    {
+      "id": "viajero-feliz",
+      "title": "Viajero",
+      "kind": "product",
+      "summary": "App de organización de viajes. Permite crear tu roadmap, valorar sitios, compartirlo con tus amigos y exportar plantillas. ¡Ideal para organizar tus viajes!",
+      "year": "2026",
+      "status": "En producción",
+      "stack": ["HTML", "CSS", "TypeScript", "PWA"],
+      "links": {
+        "repo": null,
+        "demo": "https://viajero-feliz.vercel.app/"
+      }
+    },
+    {
+      "id": "dsp",
+      "title": "Pedalboard",
+      "kind": "experiment",
+      "summary": "Aplicación web para diseñar pedaleras de guitarra mediante DSP. Una evolución más ambiciosa de este proyecto integra redes neuronales para emular el comportamiento real de los pedales.",
+      "year": "2026",
+      "status": "En proceso",
+      "stack": ["HTML", "CSS", "TypeScript", "PWA", "Faust", "DSP"],
+      "links": {
+        "repo": null,
+        "demo": "https://dsp-pink.vercel.app/"
       }
     }
   ],

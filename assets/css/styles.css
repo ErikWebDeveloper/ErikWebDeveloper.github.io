@@ -931,6 +931,7 @@ main {
 
 .filters {
   display: inline-flex;
+  flex-wrap: wrap;
   gap: 2px;
   padding: 3px;
   background: var(--surface);
@@ -982,6 +983,11 @@ main {
 .card-project[data-kind="experiment"] {
   --accent: var(--purple);
   --accent-glow: var(--purple-glow);
+}
+
+.card-project[data-kind="game"] {
+  --accent: var(--green);
+  --accent-glow: var(--green-glow);
 }
 
 .card-project.is-hidden {

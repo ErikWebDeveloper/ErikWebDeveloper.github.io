@@ -87,6 +87,13 @@ window.PortfolioRender = (function () {
     container.replaceChildren(fragment);
   }
 
+  /** Etiqueta y color del badge según el tipo de proyecto. */
+  const KINDS = {
+    product: { label: "Producto", badge: "badge-cyan" },
+    game: { label: "Juego", badge: "badge-green" },
+    experiment: { label: "Experimento", badge: "badge-purple" },
+  };
+
   /** Sección 3: tarjetas de proyectos y experimentos. */
   function renderProjects(container, projects) {
     if (!container || !projects.length) return;
@@ -94,9 +101,10 @@ window.PortfolioRender = (function () {
     const fragment = document.createDocumentFragment();
 
     projects.forEach((project) => {
-      const isExperiment = project.kind === "experiment";
+      const kind = KINDS[project.kind] ? project.kind : "product";
+      const kindMeta = KINDS[kind];
       const card = li("card card-project reveal");
-      card.dataset.kind = isExperiment ? "experiment" : "product";
+      card.dataset.kind = kind;
       card.dataset.id = project.id ?? humanize(project.title);
 
       /* Cabecera: título + badge de tipo */
@@ -113,8 +121,8 @@ window.PortfolioRender = (function () {
       title.append(hash, project.title ?? "");
 
       const badge = document.createElement("span");
-      badge.className = `badge ${isExperiment ? "badge-purple" : "badge-cyan"}`;
-      badge.textContent = isExperiment ? "Experimento" : "Producto";
+      badge.className = `badge ${kindMeta.badge}`;
+      badge.textContent = kindMeta.label;
 
       head.append(title, badge);
 
