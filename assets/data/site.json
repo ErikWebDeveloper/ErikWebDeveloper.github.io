@@ -107,7 +107,7 @@
         "demo": "https://tetriscozy3d.vercel.app/"
       }
     },
-    
+
     {
       "id": "viajero-feliz",
       "title": "Viajero",
@@ -132,6 +132,27 @@
       "links": {
         "repo": null,
         "demo": "https://dsp-pink.vercel.app/"
+      }
+    },
+    {
+      "id": "cronjob",
+      "title": "CronJob",
+      "kind": "product",
+      "summary": "Plataforma ligera y segura para ejecutar peticiones HTTP/HTTPS programadas mediante expresiones cron, pensada para funcionar de forma continua.",
+      "year": "2026",
+      "status": "Open Source",
+      "stack": [
+        "Python",
+        "TypeScript",
+        "CSS",
+        "Dockerfile",
+        "Mako",
+        "HTML",
+        "Shell"
+      ],
+      "links": {
+        "repo": "https://github.com/ErikWebDeveloper/CronJob",
+        "demo": null
       }
     }
   ],
