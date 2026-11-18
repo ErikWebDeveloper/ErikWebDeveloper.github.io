@@ -91,7 +91,7 @@
       "stack": ["TypeScript", "CSS", "JavaScript"],
       "links": {
         "repo": "https://github.com/ErikWebDeveloper/zen-chart-builder",
-        "demo": "http://zen-chart-builder-87b6.vercel.app/"
+        "demo": "https://zen-chart-builder-87b6.vercel.app/"
       }
     },
     {
